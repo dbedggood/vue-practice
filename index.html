@@ -1,0 +1,19 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="index.css" />
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      <span v-if="seen">{{ message }}</span>
+      <ol>
+        <li v-for="todo in todoList">{{ todo }}</li>
+      </ol>
+      <h2>{{ message2 }}</h2>
+      <input v-model="message2" type="text" />
+      <button v-on:click="reverseMessage">reverse the message</button>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
