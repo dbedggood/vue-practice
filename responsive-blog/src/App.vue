@@ -1,28 +1,44 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+    <NavBar :pageStatus="this.currentPage" v-on:change-page="setCurrentPage" />
+    <Home v-if="currentPage.home" />
+    <RecentPosts v-if="currentPage.recent" />
+    <AboutMe v-if="currentPage.about" />
+    <Footer />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import NavBar from './layout/NavBar'
+import Home from './views/Home'
+import RecentPosts from './views/RecentPosts'
+import AboutMe from './views/AboutMe'
+import Footer from './layout/Footer'
 
 export default {
   name: 'app',
+  data() {
+    return {
+      currentPage: {
+        home: true,
+        recent: false,
+        about: false
+      }
+    }
+  },
+  methods: {
+    setCurrentPage(pageStatus) {
+      this.currentPage.home = pageStatus.home
+      this.currentPage.recent = pageStatus.recent
+      this.currentPage.about = pageStatus.about
+    }
+  },
   components: {
-    HelloWorld
+    NavBar,
+    Home,
+    RecentPosts,
+    AboutMe,
+    Footer
   }
 }
 </script>
-
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
