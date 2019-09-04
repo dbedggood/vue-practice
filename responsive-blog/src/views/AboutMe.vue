@@ -80,9 +80,3 @@ export default {
   }
 }
 </script>
-
-<style scoped>
-p:last-child {
-  padding-bottom: 2em;
-}
-</style>

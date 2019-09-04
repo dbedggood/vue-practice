@@ -63,3 +63,9 @@
     </p>
   </div>
 </template>
+
+<style scoped>
+p:last-child {
+  padding-bottom: 2em;
+}
+</style>
