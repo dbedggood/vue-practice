@@ -9,7 +9,7 @@
     </div>
     <div class="article-recent-secondary">
       <img :src="props.imagePath" :alt="props.imageAlt" class="article-image" />
-      <p class="article-info">August 3, 2019</p>
+      <p class="article-info">{{ props.info }}</p>
     </div>
   </article>
 </template>
