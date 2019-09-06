@@ -3,7 +3,7 @@ export default [
     id: 1,
     title: 'The Mermaid Pools',
     text:
-      "This website was made to improve my CSS skills, especially on how to create responsive websites. If you're on a computer, try resizing the window to see how the layout changes! I'm am very happy with how this turned out.",
+      "This website was made to improve my CSS and Vue.js skills, especially regarding the creation of responsive websites. If you're on a computer, try resizing the window to see how the layout changes! I'm am very happy with how this turned out.",
     imagePath: require('../assets/matapouri.png'),
     imageAlt: 'A girl standing on rocky cliff, sky in background. (Photograph)',
     info: 'August 23rd, 2019'
@@ -12,7 +12,7 @@ export default [
     id: 2,
     title: 'A Day at the Beach',
     text:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ultricies hendrerit risus eu efficitur. Ut blandit odio et ante mattis, in pulvinar tellus eleifend.',
+      'The Recent Posts and About Me pages each only took a couple minutes to make after I finished the CSS and components for the Home page. Really demonstrates how versatile modular code can be when written well.',
     imagePath: require('../assets/tauranga.png'),
     imageAlt:
       'A girl in a red swimsuit walking in shallow water at the beach, an island in the distance. (Photograph)',
