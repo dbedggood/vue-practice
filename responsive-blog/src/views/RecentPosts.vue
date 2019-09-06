@@ -1,13 +1,13 @@
 <template>
   <div class="container container-flex">
-    <main role="main">
+    <main class="main-content" role="main">
       <RecentArticle
         v-for="article in articles"
         :key="article.id"
         :article="article"
       ></RecentArticle>
     </main>
-    <aside>
+    <aside class="side-bar">
       <SidebarWidget title="ABOUT ME">
         <AboutMeWidget />
       </SidebarWidget>
@@ -51,24 +51,21 @@ export default {
   max-width: 900px;
   width: 90%;
   margin: 0 auto;
-}
-
-.container-flex {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
 }
 
 @media (min-width: 750px) {
-  .container-flex {
+  .container {
     flex-direction: row;
   }
 
-  main {
+  .main-content {
     width: 65%;
   }
 
-  aside {
+  .side-bar {
     width: 30%;
     min-width: 220px;
     margin-left: 1em;

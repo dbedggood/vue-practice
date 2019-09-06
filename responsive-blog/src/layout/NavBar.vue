@@ -1,32 +1,35 @@
 <template>
-  <header>
+  <header class="banner">
     <div class="container container-flex">
       <div class="site-title">
-        <h1>Living the Simple Life</h1>
+        <h1 class="title">Living the Simple Life</h1>
         <p class="subtitle">
           a jobless developer's day-to-day
         </p>
       </div>
       <nav>
-        <ul>
-          <li class="first-nav-link">
+        <ul class="list">
+          <li class="list-item first-list-item">
             <a
+              class="link"
               href="#"
               v-bind:class="{ active: pageStatus.home }"
               v-on:click="goHome"
               >Home</a
             >
           </li>
-          <li>
+          <li class="list-item">
             <a
+              class="link"
               href="#"
               v-bind:class="{ active: pageStatus.recent }"
               v-on:click="goRecent"
               >Recent Posts</a
             >
           </li>
-          <li>
+          <li class="list-item">
             <a
+              class="link"
               href="#"
               v-bind:class="{ active: pageStatus.about }"
               v-on:click="goAbout"
@@ -58,13 +61,13 @@ export default {
 </script>
 
 <style scoped>
-header {
+.banner {
   padding: 1em 0 0.5em;
   background: #f8f8f8;
   margin-bottom: 2em;
 }
 
-h1 {
+.title {
   font-family: 'Lora', serif;
   font-weight: 400;
   color: #143774;
@@ -78,9 +81,6 @@ h1 {
   max-width: 900px;
   width: 90%;
   margin: 0 auto;
-}
-
-.container-flex {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
@@ -97,27 +97,26 @@ h1 {
   margin: 0;
 }
 
-nav ul {
+.list {
   list-style: none;
   padding: 0;
   display: flex;
   justify-content: center;
 }
 
-nav li {
-  /* margin-left: 2em; */
+.list-item {
   margin: 0 1em;
 }
 
-nav a {
+.link {
   padding: 0.5em;
   text-decoration: none;
   color: #707070;
   font-variant: small-caps;
 }
 
-nav a:hover,
-nav a:focus {
+.link:hover,
+.link:focus {
   color: #1792d2;
 }
 
@@ -130,11 +129,11 @@ nav a:focus {
 }
 
 @media (min-width: 750px) {
-  header {
+  .banner {
     padding: 2em 0;
   }
 
-  .container-flex {
+  .container {
     flex-direction: row;
   }
 
@@ -142,12 +141,12 @@ nav a:focus {
     text-align: left;
   }
 
-  nav li {
+  .list-item {
     margin: 0;
     margin-left: 2em;
   }
 
-  .first-nav-link {
+  .first-list-item {
     margin-left: 0;
   }
 }

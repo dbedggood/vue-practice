@@ -1,13 +1,13 @@
 <template functional>
-  <article class="article-featured">
-    <h2 class="article-title">{{ props.article.title }}</h2>
+  <article class="featured">
+    <h2 class="title">{{ props.article.title }}</h2>
     <img
       :src="props.article.imagePath"
       :alt="props.article.imageAlt"
-      class="article-image"
+      class="image"
     />
-    <p class="article-info">{{ props.article.info }}</p>
-    <p class="article-body">
+    <p class="info">{{ props.article.info }}</p>
+    <p class="body">
       {{ props.article.text }}
     </p>
     <a href="#" class="continue-reading">CONTINUE READING</a>
@@ -15,28 +15,33 @@
 </template>
 
 <style scoped>
-img {
+.featured {
+  padding-bottom: 2em;
+  margin-bottom: 2em;
+  border-bottom: 2px solid #707070;
+}
+
+.image {
   width: 100%;
   display: block;
 }
-h2 {
+
+.title {
+  font-size: 1.5rem;
   font-family: 'Lora', serif;
   font-weight: 400;
   color: #143774;
   margin-top: 0;
 }
-.article-featured {
-  padding-bottom: 2em;
-  margin-bottom: 2em;
-  border-bottom: 2px solid #707070;
-}
-.article-title {
-  font-size: 1.5rem;
+
+.info {
+  margin: 2em 0;
+  font-size: 0.875rem;
 }
 
-.continue-reading,
-.article-info {
-  font-size: 0.875rem;
+.body {
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 .continue-reading {
@@ -51,45 +56,17 @@ h2 {
   text-decoration: underline;
 }
 
-.article-info {
-  margin: 2em 0;
-}
-
-.article-body {
-  text-align: justify;
-  text-justify: inter-word;
-}
-a {
-  color: #1792d2;
-}
-
-a:hover,
-a:focus {
-  color: #143774;
-}
-
 @media (min-width: 750px) {
-  .article-title {
-    margin-bottom: 0em;
-  }
-
-  .article-recent {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-  .article-recent-main {
-    width: 68%;
-  }
-  .article-recent-secondary {
-    width: 30%;
-  }
-
-  .article-featured {
+  .featured {
     display: flex;
     flex-direction: column;
   }
 
-  .article-image {
+  .title {
+    margin-bottom: 0em;
+  }
+
+  .image {
     order: -2;
     width: 100%;
     min-height: 250px;
@@ -97,7 +74,7 @@ a:focus {
     object-position: right;
   }
 
-  .article-info {
+  .info {
     order: -1;
   }
 }

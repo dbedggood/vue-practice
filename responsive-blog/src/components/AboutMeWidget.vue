@@ -5,7 +5,7 @@
       alt="Daniel and his partner Rena. (Photograph)"
       class="widget-image"
     />
-    <p class="widget-body">
+    <p>
       Being unemployed sucks, but it isn't all bad. I have all the time in the
       world to do whatever I want!
     </p>
@@ -13,7 +13,7 @@
 </template>
 
 <style scoped>
-img {
+.widget-image {
   width: 100%;
   display: block;
 }

@@ -1,6 +1,6 @@
 <template functional>
   <div>
-    <h2>I Am a Developer</h2>
+    <h2 class="title">I Am a Developer</h2>
     <p>
       I used to be a computer science student at the University of Auckland.
       There was so much to learn that I felt I was supposed to appreciate, but I
@@ -13,9 +13,11 @@
       which in turn made it difficult at times to motivate myself to do any
       work. I spent most of my time hanging out with friends, playing video
       games or working on (actually practical)
-      <a href="https://github.com/dbedggood">personal software projects</a>.
+      <a class="link" href="https://github.com/dbedggood"
+        >personal software projects</a
+      >.
     </p>
-    <h3>My Last Semester at University</h3>
+    <h3 class="subtitle">My Last Semester at University</h3>
     <p>
       In my last semester I didn't have much left to do. I took my final stage 3
       paper, and then 3 other stage 1 papers just to fill out my degree planner.
@@ -30,7 +32,7 @@
       things really hard for me, I wasn't successful in my job hunt and I felt
       like I would never be able to find a job.
     </p>
-    <h3>I Still Haven't Found a Job</h3>
+    <h3 class="subtitle">I Still Haven't Found a Job</h3>
     <p>
       I've been living off of Jobseeker Support (which has been incredibly
       helpful) as I apply to every developer job I can. It's really difficult
@@ -49,46 +51,50 @@
       When I'm not applying for jobs, I'm working on developing my skills and
       growing myself to be more attractive to potential employers. This site and
       the
-      <a href="../index.html">others</a> are an example of me trying to improve
-      my proficiency in CSS. I'm doing this by reviewing the fundamentals and
-      learning how create responsive websites and more without any CSS
-      frameworks.
+      <a class="link" href="https://dbedggood.github.io/css-practice/"
+        >others</a
+      >
+      are an example of me trying to improve my proficiency in CSS. I'm doing
+      this by reviewing the fundamentals and learning how create responsive
+      websites and more without any CSS frameworks.
     </p>
     <p class="last-paragraph">
       Something else I'm working on is a
-      <a href="https://renachua.com/">website</a> for my lovely girlfriend, Rena
-      (pictured above). I created it with React, Redux and Firebase. The layout
-      is made with a CSS framework called Materialize. I'm planning to revamp
-      the UX once I master pure CSS.
+      <a class="link" href="https://renachua.com/">website</a> for my lovely
+      girlfriend, Rena (pictured above). I created it with React, Redux and
+      Firebase. The layout is made with a CSS framework called Materialize. I'm
+      planning to revamp the UX once I master pure CSS.
     </p>
   </div>
 </template>
 
 <style scoped>
-.last-paragraph {
-  padding-bottom: 2em;
-}
-a {
+.link {
   color: #1792d2;
 }
 
-a:hover,
-a:focus {
+.link:hover,
+.link:focus {
   color: #143774;
 }
 
-h2 {
+.title {
   font-family: 'Lora', serif;
   font-weight: 400;
   color: #143774;
   margin-top: 0;
 }
-h3 {
+
+.subtitle {
   font-family: 'Lora', serif;
   font-weight: 400;
   color: #143774;
   margin-top: 0;
   color: #1792d2;
   margin-top: 2em;
+}
+
+.last-paragraph {
+  padding-bottom: 2em;
 }
 </style>

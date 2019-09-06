@@ -18,12 +18,6 @@
   font-weight: 700;
   margin-top: 0;
   font-size: 1rem;
-}
-
-h2 {
-  font-family: 'Lora', serif;
-  font-weight: 400;
   color: #143774;
-  margin-top: 0;
 }
 </style>
