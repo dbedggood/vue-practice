@@ -4,10 +4,7 @@
       <RecentArticle
         v-for="article in articles"
         :key="article.id"
-        :title="article.title"
-        :text="article.text"
-        :imagePath="article.imagePath"
-        :imageAlt="article.imageAlt"
+        :article="article"
       ></RecentArticle>
     </main>
     <aside>
@@ -18,9 +15,7 @@
         <RecentPostWidget
           v-for="article in widgetArticles"
           :key="article.id"
-          :title="article.title"
-          :imagePath="article.imagePath"
-          :imageAlt="article.imageAlt"
+          :article="article"
         ></RecentPostWidget>
       </SidebarWidget>
     </aside>

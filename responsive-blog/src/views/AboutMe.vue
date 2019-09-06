@@ -9,9 +9,7 @@
         <RecentPostWidget
           v-for="article in widgetArticles"
           :key="article.id"
-          :title="article.title"
-          :imagePath="article.imagePath"
-          :imageAlt="article.imageAlt"
+          :article="article"
         ></RecentPostWidget>
       </SidebarWidget>
     </aside>

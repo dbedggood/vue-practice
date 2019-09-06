@@ -1,22 +1,11 @@
 <template>
   <div class="container container-flex">
     <main role="main">
-      <FeaturedArticle
-        :key="featuredArticle.id"
-        :title="featuredArticle.title"
-        :text="featuredArticle.text"
-        :imagePath="featuredArticle.imagePath"
-        :imageAlt="featuredArticle.imageAlt"
-        :info="featuredArticle.info"
-      ></FeaturedArticle>
+      <FeaturedArticle :article="featuredArticle"></FeaturedArticle>
       <RecentArticle
         v-for="article in recentArticles"
         :key="article.id"
-        :title="article.title"
-        :text="article.text"
-        :imagePath="article.imagePath"
-        :imageAlt="article.imageAlt"
-        :info="article.info"
+        :article="article"
       ></RecentArticle>
     </main>
     <aside>
@@ -28,9 +17,7 @@
         <RecentPostWidget
           v-for="article in widgetArticles"
           :key="article.id"
-          :title="article.title"
-          :imagePath="article.imagePath"
-          :imageAlt="article.imageAlt"
+          :article="article"
         ></RecentPostWidget>
       </div>
     </aside>
