@@ -5,11 +5,7 @@
       <AboutMeContent />
     </main>
     <aside>
-      <div class="sidebar-widget">
-        <AboutMeWidget />
-      </div>
-      <div class="sidebar-widget">
-        <h2 class="widget-title">RECENT POSTS</h2>
+      <SidebarWidget title="RECENT POSTS">
         <RecentPostWidget
           v-for="article in widgetArticles"
           :key="article.id"
@@ -17,14 +13,14 @@
           :imagePath="article.imagePath"
           :imageAlt="article.imageAlt"
         ></RecentPostWidget>
-      </div>
+      </SidebarWidget>
     </aside>
   </div>
 </template>
 
 <script>
 import AboutMeContent from '../components/AboutMeContent'
-import AboutMeWidget from '../components/AboutMeWidget'
+import SidebarWidget from '../components/SidebarWidget'
 import RecentPostWidget from '../components/RecentPostWidget'
 import articles from '../assets/articles'
 
@@ -32,7 +28,7 @@ export default {
   name: 'AboutMe',
   components: {
     AboutMeContent,
-    AboutMeWidget,
+    SidebarWidget,
     RecentPostWidget
   },
   data() {

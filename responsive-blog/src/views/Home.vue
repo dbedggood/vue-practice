@@ -20,9 +20,9 @@
       ></RecentArticle>
     </main>
     <aside>
-      <div class="sidebar-widget">
+      <SidebarWidget title="ABOUT ME">
         <AboutMeWidget />
-      </div>
+      </SidebarWidget>
       <div class="sidebar-widget">
         <h2 class="widget-title">RECENT POSTS</h2>
         <RecentPostWidget
@@ -40,6 +40,7 @@
 <script>
 import FeaturedArticle from '../components/FeaturedArticle'
 import RecentArticle from '../components/RecentArticle'
+import SidebarWidget from '../components/SidebarWidget'
 import AboutMeWidget from '../components/AboutMeWidget'
 import RecentPostWidget from '../components/RecentPostWidget'
 import articles from '../assets/articles'
@@ -49,6 +50,7 @@ export default {
   components: {
     FeaturedArticle,
     RecentArticle,
+    SidebarWidget,
     AboutMeWidget,
     RecentPostWidget
   },

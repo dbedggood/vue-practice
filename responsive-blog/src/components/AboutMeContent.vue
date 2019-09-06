@@ -54,7 +54,7 @@
       learning how create responsive websites and more without any CSS
       frameworks.
     </p>
-    <p>
+    <p class="last-paragraph">
       Something else I'm working on is a
       <a href="https://renachua.com/">website</a> for my lovely girlfriend, Rena
       (pictured above). I created it with React, Redux and Firebase. The layout
@@ -65,7 +65,7 @@
 </template>
 
 <style scoped>
-p:last-child {
+.last-paragraph {
   padding-bottom: 2em;
 }
 </style>

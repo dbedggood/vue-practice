@@ -1,6 +1,5 @@
 <template functional>
   <div>
-    <h2 class="widget-title">ABOUT ME</h2>
     <img
       src="../assets/about-me.png"
       alt="Daniel and his partner Rena. (Photograph)"
