@@ -5,7 +5,7 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "deploy": "vue-cli-service build && python switch_folders.py",
+    "predeploy": "vue-cli-service build && python replace_docs.py",
     "lint": "vue-cli-service lint"
   },
   "homepage": "https://github.com/dbedggood/vue-practice",
