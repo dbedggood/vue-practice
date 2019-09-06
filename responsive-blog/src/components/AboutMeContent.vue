@@ -68,4 +68,27 @@
 .last-paragraph {
   padding-bottom: 2em;
 }
+a {
+  color: #1792d2;
+}
+
+a:hover,
+a:focus {
+  color: #143774;
+}
+
+h2 {
+  font-family: 'Lora', serif;
+  font-weight: 400;
+  color: #143774;
+  margin-top: 0;
+}
+h3 {
+  font-family: 'Lora', serif;
+  font-weight: 400;
+  color: #143774;
+  margin-top: 0;
+  color: #1792d2;
+  margin-top: 2em;
+}
 </style>

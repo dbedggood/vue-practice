@@ -4,3 +4,26 @@
     <slot></slot>
   </div>
 </template>
+
+<style scoped>
+.sidebar-widget {
+  border: 15px solid #efefef;
+  margin-bottom: 2em;
+  padding: 1em;
+  padding-bottom: 0;
+}
+
+.widget-title {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 700;
+  margin-top: 0;
+  font-size: 1rem;
+}
+
+h2 {
+  font-family: 'Lora', serif;
+  font-weight: 400;
+  color: #143774;
+  margin-top: 0;
+}
+</style>

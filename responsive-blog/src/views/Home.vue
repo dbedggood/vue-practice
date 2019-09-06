@@ -12,14 +12,13 @@
       <SidebarWidget title="ABOUT ME">
         <AboutMeWidget />
       </SidebarWidget>
-      <div class="sidebar-widget">
-        <h2 class="widget-title">RECENT POSTS</h2>
+      <SidebarWidget title="RECENT POSTS">
         <RecentPostWidget
           v-for="article in widgetArticles"
           :key="article.id"
           :article="article"
         ></RecentPostWidget>
-      </div>
+      </SidebarWidget>
     </aside>
   </div>
 </template>
@@ -50,3 +49,33 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+.container {
+  max-width: 900px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.container-flex {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+@media (min-width: 750px) {
+  .container-flex {
+    flex-direction: row;
+  }
+
+  main {
+    width: 65%;
+  }
+
+  aside {
+    width: 30%;
+    min-width: 220px;
+    margin-left: 1em;
+  }
+}
+</style>
