@@ -94,6 +94,7 @@ export default {
   font-weight: 700;
   color: #1792d2;
   text-transform: uppercase;
+  letter-spacing: 1px;
   margin: 0;
 }
 
@@ -109,11 +110,12 @@ export default {
 }
 
 .link {
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   padding: 0.5em;
   text-decoration: none;
   color: #707070;
   text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 .link:hover,

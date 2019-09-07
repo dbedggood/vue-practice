@@ -20,5 +20,6 @@
   font-size: 1rem;
   color: #143774;
   text-transform: uppercase;
+  letter-spacing: 1px;
 }
 </style>
