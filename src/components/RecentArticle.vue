@@ -5,7 +5,7 @@
       <p class="body">
         {{ props.article.text }}
       </p>
-      <a href="#" class="continue-reading">CONTINUE READING</a>
+      <a href="#" class="continue-reading">Continue reading</a>
     </div>
     <div class="recent-secondary">
       <v-lazy-image
@@ -47,6 +47,7 @@
   color: #1792d2;
   text-decoration: none;
   font-weight: 700;
+  text-transform: uppercase;
   font-size: 0.875rem;
 }
 

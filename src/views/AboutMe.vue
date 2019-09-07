@@ -10,7 +10,7 @@
       <AboutMeContent />
     </main>
     <aside class="side-bar">
-      <SidebarWidget title="RECENT POSTS">
+      <SidebarWidget title="Recent posts">
         <RecentPostWidget
           v-for="article in widgetArticles"
           :key="article.id"

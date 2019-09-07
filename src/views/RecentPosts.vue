@@ -8,10 +8,10 @@
       ></RecentArticle>
     </main>
     <aside class="side-bar">
-      <SidebarWidget title="ABOUT ME">
+      <SidebarWidget title="About Me">
         <AboutMeWidget />
       </SidebarWidget>
-      <SidebarWidget title="RECENT POSTS">
+      <SidebarWidget title="Recent posts">
         <RecentPostWidget
           v-for="article in widgetArticles"
           :key="article.id"

@@ -11,7 +11,7 @@
     <p class="body">
       {{ props.article.text }}
     </p>
-    <a href="#" class="continue-reading">CONTINUE READING</a>
+    <a href="#" class="continue-reading">Continue reading</a>
   </article>
 </template>
 
@@ -49,6 +49,7 @@
   color: #1792d2;
   text-decoration: none;
   font-weight: 700;
+  text-transform: uppercase;
 }
 
 .continue-reading:hover,

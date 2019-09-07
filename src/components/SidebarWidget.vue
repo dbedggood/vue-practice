@@ -19,5 +19,6 @@
   margin-top: 0;
   font-size: 1rem;
   color: #143774;
+  text-transform: uppercase;
 }
 </style>

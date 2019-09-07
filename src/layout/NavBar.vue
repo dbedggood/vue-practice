@@ -4,7 +4,7 @@
       <div class="site-title">
         <h1 class="title">Living the Simple Life</h1>
         <p class="subtitle">
-          a jobless developer's day-to-day
+          A developer's day-to-day
         </p>
       </div>
       <nav>
@@ -93,7 +93,7 @@ export default {
 .subtitle {
   font-weight: 700;
   color: #1792d2;
-  font-variant: small-caps;
+  text-transform: uppercase;
   margin: 0;
 }
 
@@ -109,10 +109,11 @@ export default {
 }
 
 .link {
+  font-size: 0.9rem;
   padding: 0.5em;
   text-decoration: none;
   color: #707070;
-  font-variant: small-caps;
+  text-transform: uppercase;
 }
 
 .link:hover,
