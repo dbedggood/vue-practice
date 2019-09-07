@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div v-cloak>
     <NavBar :pageStatus="this.currentPage" v-on:change-page="setCurrentPage" />
     <Home v-if="currentPage.home" />
     <RecentPosts v-if="currentPage.recent" />
@@ -44,7 +44,41 @@ export default {
 </script>
 
 <style>
-@import url('https://fonts.googleapis.com/css?family=Lora|Ubuntu:300,400,700&display=swap');
+@font-face {
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lora Regular'), local('Lora-Regular'),
+    url('./fonts/lora-v14-latin-regular.woff2') format('woff2'),
+    url('./fonts/lora-v14-latin-regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Ubuntu Light'), local('Ubuntu-Light'),
+    url('./fonts/ubuntu-v14-latin-300.woff2') format('woff2'),
+    url('./fonts/ubuntu-v14-latin-300.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Ubuntu Regular'), local('Ubuntu-Regular'),
+    url('./fonts/ubuntu-v14-latin-regular.woff2') format('woff2'),
+    url('./fonts/ubuntu-v14-latin-regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Ubuntu Bold'), local('Ubuntu-Bold'),
+    url('./fonts/ubuntu-v14-latin-700.woff2') format('woff2'),
+    url('./fonts/ubuntu-v14-latin-700.woff') format('woff');
+}
 
 body {
   margin: 0;
