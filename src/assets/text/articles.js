@@ -13,7 +13,7 @@ export default [
     id: 2,
     title: 'A Day at the Beach',
     text:
-      'The Recent Posts and About Me pages each only took a couple minutes to make after I finished the CSS and components for the Home page. Really demonstrates how versatile modular code can be when written well.',
+      'The Recent Posts and About Me pages each only took a couple minutes to make after I finished the CSS and components for the Home page. Really demonstrates how versatile your code is when written with modularity in mind.',
     imagePath: require('../images/tauranga.png'),
     imagePathFullSize: require('../images/tauranga-large.png'),
     imageAlt:
