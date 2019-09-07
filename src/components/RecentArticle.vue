@@ -8,8 +8,9 @@
       <a href="#" class="continue-reading">CONTINUE READING</a>
     </div>
     <div class="recent-secondary">
-      <img
-        :src="props.article.imagePath"
+      <v-lazy-image
+        :src="props.article.imagePathFullSize"
+        :src-placeholder="props.article.imagePath"
         :alt="props.article.imageAlt"
         class="image"
       />

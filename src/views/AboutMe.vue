@@ -1,7 +1,12 @@
 <template>
   <div class="container container-flex">
     <main class="main-content" role="main">
-      <img src="../assets/about-me.png" class="image-full" />
+      <v-lazy-image
+        :src="largeImage"
+        :src-placeholder="smallImage"
+        alt="Daniel and his partner Rena. (Photograph)"
+        class="image-full"
+      />
       <AboutMeContent />
     </main>
     <aside class="side-bar">
@@ -31,6 +36,8 @@ export default {
   },
   data() {
     return {
+      largeImage: require('../assets/about-me-large.png'),
+      smallImage: require('../assets/about-me.png'),
       widgetArticles: articles.slice(0, 3)
     }
   }

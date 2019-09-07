@@ -1,8 +1,9 @@
 <template functional>
   <div class="post">
     <h3 class="post-title">{{ props.article.title }}</h3>
-    <img
-      :src="props.article.imagePath"
+    <v-lazy-image
+      :src="props.article.imagePathFullSize"
+      :src-placeholder="props.article.imagePath"
       :alt="props.article.imageAlt"
       class="image"
     />

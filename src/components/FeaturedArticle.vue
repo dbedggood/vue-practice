@@ -1,8 +1,9 @@
 <template functional>
   <article class="featured">
     <h2 class="title">{{ props.article.title }}</h2>
-    <img
-      :src="props.article.imagePath"
+    <v-lazy-image
+      :src="props.article.imagePathFullSize"
+      :src-placeholder="props.article.imagePath"
       :alt="props.article.imageAlt"
       class="image"
     />

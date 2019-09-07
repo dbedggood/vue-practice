@@ -42,3 +42,21 @@ export default {
   }
 }
 </script>
+
+<style>
+@import url('https://fonts.googleapis.com/css?family=Lora|Ubuntu:300,400,700&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1.125rem;
+  font-weight: 300;
+}
+.v-lazy-image {
+  opacity: 0;
+  transition: opacity 1s;
+}
+.v-lazy-image-loaded {
+  opacity: 1;
+}
+</style>
