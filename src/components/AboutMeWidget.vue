@@ -17,8 +17,8 @@
 export default {
   data() {
     return {
-      smallImage: require('../assets/about-me.png'),
-      largeImage: require('../assets/about-me-large.png')
+      smallImage: require('../assets/images/about-me.png'),
+      largeImage: require('../assets/images/about-me-large.png')
     }
   }
 }

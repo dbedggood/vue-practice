@@ -49,8 +49,8 @@ export default {
   font-style: normal;
   font-weight: 400;
   src: local('Lora Regular'), local('Lora-Regular'),
-    url('./fonts/lora-v14-latin-regular.woff2') format('woff2'),
-    url('./fonts/lora-v14-latin-regular.woff') format('woff');
+    url('./assets/fonts/lora-v14-latin-regular.woff2') format('woff2'),
+    url('./assets/fonts/lora-v14-latin-regular.woff') format('woff');
 }
 
 @font-face {
@@ -58,8 +58,8 @@ export default {
   font-style: normal;
   font-weight: 300;
   src: local('Ubuntu Light'), local('Ubuntu-Light'),
-    url('./fonts/ubuntu-v14-latin-300.woff2') format('woff2'),
-    url('./fonts/ubuntu-v14-latin-300.woff') format('woff');
+    url('./assets/fonts/ubuntu-v14-latin-300.woff2') format('woff2'),
+    url('./assets/fonts/ubuntu-v14-latin-300.woff') format('woff');
 }
 
 @font-face {
@@ -67,8 +67,8 @@ export default {
   font-style: normal;
   font-weight: 400;
   src: local('Ubuntu Regular'), local('Ubuntu-Regular'),
-    url('./fonts/ubuntu-v14-latin-regular.woff2') format('woff2'),
-    url('./fonts/ubuntu-v14-latin-regular.woff') format('woff');
+    url('./assets/fonts/ubuntu-v14-latin-regular.woff2') format('woff2'),
+    url('./assets/fonts/ubuntu-v14-latin-regular.woff') format('woff');
 }
 
 @font-face {
@@ -76,8 +76,8 @@ export default {
   font-style: normal;
   font-weight: 700;
   src: local('Ubuntu Bold'), local('Ubuntu-Bold'),
-    url('./fonts/ubuntu-v14-latin-700.woff2') format('woff2'),
-    url('./fonts/ubuntu-v14-latin-700.woff') format('woff');
+    url('./assets/fonts/ubuntu-v14-latin-700.woff2') format('woff2'),
+    url('./assets/fonts/ubuntu-v14-latin-700.woff') format('woff');
 }
 
 body {

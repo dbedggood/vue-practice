@@ -29,7 +29,7 @@ import RecentArticle from '../components/RecentArticle'
 import SidebarWidget from '../components/SidebarWidget'
 import AboutMeWidget from '../components/AboutMeWidget'
 import RecentPostWidget from '../components/RecentPostWidget'
-import articles from '../assets/articles'
+import articles from '../assets/text/articles'
 
 export default {
   name: 'Home',

@@ -25,7 +25,7 @@
 import AboutMeContent from '../components/AboutMeContent'
 import SidebarWidget from '../components/SidebarWidget'
 import RecentPostWidget from '../components/RecentPostWidget'
-import articles from '../assets/articles'
+import articles from '../assets/text/articles'
 
 export default {
   name: 'AboutMe',
@@ -36,8 +36,8 @@ export default {
   },
   data() {
     return {
-      largeImage: require('../assets/about-me-large.png'),
-      smallImage: require('../assets/about-me.png'),
+      largeImage: require('../assets/images/about-me-large.png'),
+      smallImage: require('../assets/images/about-me.png'),
       widgetArticles: articles.slice(0, 3)
     }
   }
