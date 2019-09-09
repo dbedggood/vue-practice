@@ -24,7 +24,7 @@ export default [
     id: 3,
     title: 'Visiting Home',
     text:
-      'Quisque at tincidunt massa. Sed id euismod nulla. Phasellus vel turpis a mi auctor sodales. Aliquam vel congue tellus, ut interdum enim. Aenean vitae erat dictum, pharetra leo a, condimentum ligula. Aliquam mauris erat, egestas ut tristique nec, tincidunt ut leo. Nam nec consectetur lorem.',
+      'The site used to have a terrible FOUT (flash of unstyled text). I largely fixed that by downloading the fonts and hosting them with the website. There is still a little bit of a FOUC (flash of unstyled content) though, so I might add a short loading screen for the whole thing.',
     imagePath: require('../images/whangateau.png'),
     imagePathFullSize: require('../images/whangateau-large.png'),
     imageAlt:
@@ -35,7 +35,7 @@ export default [
     id: 4,
     title: 'Hole in the Rock',
     text:
-      'Morbi sit amet nisi vestibulum, aliquet ante ut, fermentum risus. Mauris ac diam eros. Curabitur elementum dignissim mattis. Aliquam laoreet, ligula accumsan ultricies condimentum, dolor massa maximus dui, ut convallis sapien nibh sed quam.',
+      "For some reason I couldn't find an intuitive way to upload this vue project onto GitHub pages. The build files were showing a blank page in production. What I ended up doing was making a small change in vue.config.js, then I wrote a python script to build and rename the dist folder to be the docs folder.",
     imagePath: require('../images/russel.png'),
     imagePathFullSize: require('../images/russel-large.png'),
     imageAlt:
